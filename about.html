@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - AI Conversation Saver Extension</title>
+  <meta name="description" content="Learn about AI Conversation Saver, our technical architecture, privacy philosophy, and mission to preserve the best of artificial intelligence conversations.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link">
+        <img src="logo.svg" alt="AI Conversation Saver Logo" class="brand-logo-img">
+        <span>AI Conversation Saver</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="index.html#use-cases">Use Cases</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-ghost btn-sm">Sign In</button>
+        <button type="button" class="btn btn-primary btn-sm">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Hero -->
+    <section class="section section-hero" style="padding-bottom: 32px;">
+      <div class="container">
+        <span class="section-tag">Extension Profile &amp; Mission</span>
+        <h1 class="hero-title">
+          Built for Engineers, Thinkers, &amp; <br>
+          <span class="hero-highlight">AI Power Users</span>
+        </h1>
+        <p class="hero-subtitle">
+          LLMs produce hundreds of valuable responses daily, yet traditional chat history disappears into endless chronological feeds. AI Conversation Saver turns ephemeral conversations into an indexed, permanent knowledge asset.
+        </p>
+      </div>
+    </section>
+
+    <!-- The Problem & Solution -->
+    <section class="section" style="padding-top: 24px;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 36px; max-width: 1000px; margin: 0 auto;">
+          <div style="padding: 32px; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 16px;">
+            <div style="display: inline-flex; padding: 6px 12px; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.25); border-radius: 6px; color: #fca5a5; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 16px;">
+              The Frustration
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 12px; color: var(--text-primary);">The Ephemeral AI Trap</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 12px;">
+              You spend 45 minutes prompt engineering a high-value data parser or business analysis. Two weeks later, you need it again, but it is buried under 150 generic chat logs across three different tabs.
+            </p>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
+              Manual copy-pasting to text files breaks the flow, loses original formatting, and lacks instant search.
+            </p>
+          </div>
+
+          <div style="padding: 32px; background: var(--bg-card); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 16px;">
+            <div style="display: inline-flex; padding: 6px 12px; background: var(--accent-blue-subtle); border: 1px solid rgba(59, 130, 246, 0.25); border-radius: 6px; color: #93c5fd; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 16px;">
+              The Solution
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 12px; color: var(--text-primary);">Instant In-Place Preservation</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 12px;">
+              AI Conversation Saver places a discreet marker button directly on every assistant response. One click pins the message with tags, categories, and full Markdown structure.
+            </p>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
+              Access your library anytime from the Chrome Side Panel, side-by-side with your active tab.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Architecture -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Architecture</span>
+          <h2 class="section-title">Engineered to Modern Chrome Standards</h2>
+          <p class="section-desc">
+            Constructed strictly on Chrome Extension Manifest V3 for optimal performance, instant load times, and battery preservation.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3 class="feature-title">Chrome Manifest V3</h3>
+            <p class="feature-desc">
+              Leverages modern background service workers and declarative rules. Complies with Google Web Store security and privacy standards.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="feature-title">Chrome Side Panel API</h3>
+            <p class="feature-desc">
+              Runs as a native companion panel beside ChatGPT, Claude, and Gemini tabs. No floating windows or intrusive screen overlays.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="feature-title">Client-Side IndexedDB</h3>
+            <p class="feature-desc">
+              Stores conversations, tags, and category taxonomies locally inside your browser storage for instant 0ms retrieval and offline support.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="feature-title">Targeted Content Scripting</h3>
+            <p class="feature-desc">
+              Executes solely on authorized domains (chatgpt.com, claude.ai, gemini.google.com). Never injects or reads unrelated browsing sessions.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="feature-title">Syntax &amp; Markdown Engine</h3>
+            <p class="feature-desc">
+              Preserves clean code block demarcations, table layouts, and bullet hierarchies ready for one-click export into IDEs and notes.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="feature-title">Optional Cloud Sync</h3>
+            <p class="feature-desc">
+              For multi-device synchronization, securely authenticate via Email or Google OAuth backed by row-level security policies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy Manifesto -->
+    <section class="section">
+      <div class="container">
+        <div style="max-width: 800px; margin: 0 auto; padding: 40px; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 16px;">
+          <h2 style="font-size: 1.75rem; font-weight: 800; margin-bottom: 16px; color: var(--text-primary);">Our Privacy &amp; Data Pledge</h2>
+          <div style="display: flex; flex-direction: column; gap: 16px; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
+            <p>
+              1. <strong>Local by Default:</strong> Your saved conversations reside in local browser storage by default. Nothing is transmitted to external servers without your explicit account creation.
+            </p>
+            <p>
+              2. <strong>Zero Advertising &amp; Tracking:</strong> We do not track your browsing history, sell data to third-party brokers, or install tracking pixels.
+            </p>
+            <p>
+              3. <strong>Scoped Permissions:</strong> The extension requests host access only for the specific AI web applications you use to preserve conversations.
+            </p>
+            <p>
+              4. <strong>Export Freedom:</strong> You own your data. Export your entire library to standard Markdown files at any time with zero vendor lock-in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link">
+            <img src="logo.svg" alt="AI Conversation Saver Logo" class="brand-logo-img">
+            <span>AI Conversation Saver</span>
+          </a>
+          <p>
+            The essential Chrome extension for preserving, searching, and organizing insights across ChatGPT, Claude, and Gemini.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <div class="footer-nav-col">
+            <h4>Product</h4>
+            <a href="index.html">Overview</a>
+            <a href="index.html#use-cases">Use Cases</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">Architecture</a>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Company</h4>
+            <a href="about.html">About Extension</a>
+            <a href="contact.html">Support</a>
+            <a href="contact.html">Feedback</a>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Platforms</h4>
+            <a href="https://chatgpt.com" target="_blank" rel="noreferrer">OpenAI ChatGPT</a>
+            <a href="https://claude.ai" target="_blank" rel="noreferrer">Anthropic Claude</a>
+            <a href="https://gemini.google.com" target="_blank" rel="noreferrer">Google Gemini</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 AI Conversation Saver Extension. All rights reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="about.html" style="color: inherit; text-decoration: none;">Privacy Policy</a>
+          <a href="about.html" style="color: inherit; text-decoration: none;">Terms of Service</a>
+          <a href="contact.html" style="color: inherit; text-decoration: none;">Contact Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

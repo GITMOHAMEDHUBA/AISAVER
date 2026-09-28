@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#27272a" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+  </defs>
+  <!-- Background Shape -->
+  <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#brandGrad)" stroke="#3f3f46" stroke-width="1.5"/>
+  
+  <!-- Dialogue Bubble Outline -->
+  <path d="M14 15h20a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3h-9l-5 4v-4h-6a3 3 0 0 1-3-3V18a3 3 0 0 1 3-3z" 
+        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Bookmark / Saver Ribbon Accent -->
+  <path d="M26 15v9l3-2 3 2v-9h-6z" fill="url(#accentGrad)" stroke="#60a5fa" stroke-width="0.75"/>
+
+  <!-- Content Lines inside bubble -->
+  <path d="M17 21h5M17 25h9" stroke="#a1a1aa" stroke-width="1.75" stroke-linecap="round"/>
+</svg>
